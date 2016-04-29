@@ -1,0 +1,36 @@
+@mixin bespoke-backdrop-dark($class, $image) {
+  $dark-slide-background: #000;
+  $dark-slide-color: #fff;
+
+  .#{$class} {
+    background-color: $dark-slide-background;
+    opacity: 0;
+
+    &:before {
+      background-image: url('#{$image}');
+      position: absolute;
+      background-size: cover;
+      background-position: 50% 50%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      opacity: 0;
+      transition: none;
+    }
+
+
+    &.bespoke-backdrop-active {
+      opacity: 1;
+
+      &:before {
+        opacity: .75;
+      }
+    }
+  }
+
+  [data-bespoke-backdrop='#{$class}'] {
+    color: $dark-slide-color;
+  }
+}

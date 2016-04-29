@@ -1,0 +1,3 @@
+@import '../../bespoke/mixins';
+@include bespoke-backdrop-dark('globe', './images/globe.jpg');
+@include bespoke-backdrop-dark('lego', './images/lego.gif');

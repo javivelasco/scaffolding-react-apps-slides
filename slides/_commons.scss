@@ -1,0 +1,30 @@
+$color-red: #fa114f;
+$color-orange: #ff3b30;
+$color-orange-light: #ff9500;
+$color-yellow: #ffe620;
+$color-green: #04de71;
+$color-magenta: #00f5ea;
+$color-blue-light: #5ac8fa;
+$color-blue: #2094fa;
+$color-purple: #787aff;
+$color-gray: #f2f4fc;
+
+@mixin change-colors-mixin($property) {
+  @keyframes change-colors-#{$property} {
+    0%   { #{$property}: $color-red;     }
+    20%  { #{$property}: $color-green;   }
+    40%  { #{$property}: $color-magenta; }
+    60%  { #{$property}: $color-blue;    }
+    80%  { #{$property}:  $color-purple; }
+    100% { #{$property}: $color-red;     }
+  }
+}
+
+.change-colors {
+  animation-name: change-colors-color;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@include change-colors-mixin('fill');
+@include change-colors-mixin('color');

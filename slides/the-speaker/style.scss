@@ -1,0 +1,73 @@
+@import '../commons';
+
+.speaker-polygon {
+  left: 50%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .polygon {
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-name: change-colors-fill;
+  }
+}
+
+.speaker-hi {
+  color: $color-gray;
+  font-size: 140px;
+}
+
+.speaker-card {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+
+.speaker-avatar {
+  border-radius: 50%;
+  height: 120px;
+  margin-right: 20px;
+  width: 120px;
+}
+
+.language-jsx {
+  &.speaker-code {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.toolbox-logo {
+  fill: $color-purple;
+  width: 100px;
+}
+
+.toolbox-name {
+  margin: 10px 0 0;
+}
+
+.toolbox-subtitle {
+  font-size: 18px;
+}
+
+.toolbox-stars {
+  margin: 20px;
+  transform: scale(2);
+  width: 220px;
+
+  > iframe {
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    vertical-align: top;
+    width: 70px;
+  }
+}
+
+.audiense-logo {
+  margin-bottom: 10px;
+  max-width: 320px;
+}
