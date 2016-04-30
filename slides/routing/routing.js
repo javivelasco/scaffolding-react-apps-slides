@@ -62,17 +62,6 @@ const slides = [
     <section>
       <Code html={require('!!prismjs?lang=jsx!./code/action-redirect.js')} />
     </section>
-  ),
-  () => (
-    <section>
-      <h4 className="bullet">so...</h4>
-        <p className="bullet">a route is mapped to a component tree.</p>
-        <p className="bullet">a component can be connected to the store.</p>
-        <p className="bullet">renders data depending on the store.</p>
-        <p className="bullet">has actions creators bound to dispatch.</p>
-        <p className="bullet">actions generate side effects changing store.</p>
-        <p className="bullet">re-render happens depending on new state.</p>
-    </section>
   )
 ];
 
