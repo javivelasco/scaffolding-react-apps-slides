@@ -8,7 +8,7 @@ import Shark from './components/Shark';
 const slides = [
   () => (
     <section data-bespoke-backdrop="globe">
-      <h1 style={{ marginBottom: 0, paddingBottom: 0 }}>react.</h1>
+      <h1>react.</h1>
     </section>
   ),
   () => (
