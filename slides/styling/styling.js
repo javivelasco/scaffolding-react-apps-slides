@@ -11,7 +11,7 @@ const slides = [
   () => (
     <section>
       <h2>inline styles.</h2>
-      <p>betting hard.</p>
+      <p>...</p>
     </section>
   ),
   () => (

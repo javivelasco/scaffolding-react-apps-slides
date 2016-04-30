@@ -47,6 +47,7 @@
     "eslint-plugin-react": "^4.3.0",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",
+    "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.16.0",
     "image-webpack-loader": "^1.8.0",
     "json5": "^0.5.0",
@@ -62,6 +63,7 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.3",
+    "rimraf": "^2.5.2",
     "sass-lint": "^1.5.1",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
@@ -71,7 +73,10 @@
   },
   "scripts": {
     "start": "NODE_ENV=development UV_THREADPOOL_SIZE=100 node ./server",
-    "build": "NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config ./webpack.config.prod --colors --profile --progress"
+    "build": "NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config ./webpack.config.prod --colors --profile --progress",
+    "clean": "rimraf ./build",
+    "deploy": "gh-pages -d build",
+    "prebuild": "npm run clean"
   },
   "license": "MIT",
   "peerDependencies": {

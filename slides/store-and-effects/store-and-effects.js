@@ -12,7 +12,7 @@ const slides = [
     <section>
       <img style={{ width: 80, marginBottom: 10 }} src={require('./images/redux-logo.png')} />
       <h3>redux.</h3>
-      <p>a predictable state container for javaScript apps.</p>
+      <p>a predictable state container for javascript apps.</p>
     </section>
   ),
   () => (
@@ -59,12 +59,7 @@ const slides = [
     <section>
       <h4 className="bullet">this is <span className="change-colors">not</span> easy</h4>
       <h4 className="bullet">did you said alternatives?</h4>
-      <h4 className="bullet">meet redux-saga <span className="bullet">😱</span></h4>
-    </section>
-  ),
-  () => (
-    <section>
-      <Code html={require('!!prismjs?lang=jsx!./code/redux-saga.js')} />
+      <h4 className="bullet">redux-saga <span className="bullet">😱</span></h4>
     </section>
   ),
   () => (

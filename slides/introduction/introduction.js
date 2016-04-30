@@ -9,7 +9,6 @@ const slides = [
   () => (
     <section data-bespoke-backdrop="globe">
       <h1 style={{ marginBottom: 0, paddingBottom: 0 }}>react.</h1>
-      <p>changing the established model.</p>
     </section>
   ),
   () => (
@@ -20,9 +19,9 @@ const slides = [
   ),
   () => (
     <section>
-      <h4 className="bullet">just the UI.</h4>
+      <h4 className="bullet">just the ui.</h4>
       <h4 className="bullet">one way reactive data flow.</h4>
-      <h4 className="bullet">virtual DOM.</h4>
+      <h4 className="bullet">virtual dom.</h4>
       <h4 className="bullet">the app is a component tree.</h4>
     </section>
   ),
@@ -55,7 +54,7 @@ const slides = [
   () => (
     <section>
       <span style={{marginBottom: 20, transform: 'scale(3)'}}>🤔</span>
-      <h4>what to consider for an SPA?</h4>
+      <h4>an spa with react?</h4>
     </section>
   ),
   () => (

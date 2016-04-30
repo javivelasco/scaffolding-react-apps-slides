@@ -13,7 +13,7 @@ const slides = [
       <h4 className="bullet">the view depends on the stored data.</h4>
       <h4 className="bullet">with routing, it depends on the url as well.</h4>
       <h4 className="bullet">
-        components should talk to the <span className="change-colors">history api.</span>
+        components talk to the <span className="change-colors">history api.</span>
       </h4>
     </section>
   ),

@@ -16,7 +16,7 @@ const slides = [
       <h4 className="bullet">able to prefetch data.</h4>
       <h4 className="bullet">fully reactive.</h4>
       <h4 className="bullet">with scoped css.</h4>
-      <h4 className="bullet">base in small components.</h4>
+      <h4 className="bullet">based in small components.</h4>
       <h4 className="bullet">logic and view separated.</h4>
     </section>
   ),
@@ -42,8 +42,8 @@ const slides = [
   ),
   () => (
     <section data-bespoke-backdrop="frank">
-      <h3 style={{ width: 650 }}>first class monster.</h3>
-      <p>thank u!</p>
+      <h3>a beautiful <span className="change-colors">alive</span> monster.</h3>
+      <p>thank you!</p>
     </section>
   )
 ];

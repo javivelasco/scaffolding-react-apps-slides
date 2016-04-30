@@ -1,5 +1,3 @@
-import './bespoke/theme.scss';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import bespoke from './bespoke';
